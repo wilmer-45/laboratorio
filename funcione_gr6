@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include "lib_gr6.h"
+#include <stdio.h>
+
+void print(double a[], int n) {
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        printf("%.1f ",a[i]);
+    }
+}
+
+void bubble(double* a, int n)
+ {
+    int i, j;
+    double P, N;
+    for(i = 0; i < n; i++)
+    {
+      for(j = i+1; j < n; j++)
+        {
+            if(a[j] < a[i]){
+                swap(&a[i],&a[j]);
+            }
+        }
+         }
+    }
+ }
+
+ void swap(double *P, double *N) {
+    double temp;
+    temp=*P;
+    *P=*N;
+    *N=temp;
+}
+void insert(double a[],int n){
+        int i,j;
+        double temp;
+        for (i=1;i<n;i++){
+                temp = a[i];
+                j=i-1;
+                }
+                while(j>=0 && temp<=a[j]){
+                        a[j+1]=a[j];
+                        j=j-1;
+                }
+                a[j+1]=temp;
+        }
